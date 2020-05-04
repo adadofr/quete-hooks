@@ -5,7 +5,7 @@ function Counter() {
 
   return (
     <div>
-      <input type="number" name="countValue" value={count} onChange={(event) => setCount(event.target.value)}/>
+      <input type="number" name="countValue" onChange={(event) => setCount(event.target.value)}/>
       <p>Le compteur est  à : {count} </p>
       <button onClick={() => setCount(parseInt(count) + 1)}>
         +1
